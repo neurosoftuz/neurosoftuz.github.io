@@ -1,0 +1,40 @@
+*{
+	margin:0px;
+	padding:0px;
+	
+}
+div{
+	width:520px;
+	margin:auto;
+	background:gold;
+	display:none;
+	position:absolute;
+	top:20px;
+	left:100px;
+}
+div>p{
+	display:inline-block;
+	margin-left:20px;
+	background:black;
+	color:white;
+	
+}
+ul{
+	float:left;
+	list-style-type:none;
+	background:cyan;
+	margin-left:100px;
+}
+ul>li{
+	float:right;
+	margin-left:20px;
+	color:white;
+	font-size:20px;
+	margin-top:;
+}
+ul>li:hover>div{
+	display:block;
+}
+article{
+	background: cyan;
+}

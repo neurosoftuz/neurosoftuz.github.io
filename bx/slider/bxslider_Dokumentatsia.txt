@@ -1,0 +1,226 @@
+﻿<div class='container'>
+	<ul class='my-slider'>
+		<li><img src='imag/f1.jpg' title='Picture one'></li>
+		<li><img src='imag/t2.jpg' title='Picture two'></li>
+		<li><img src='imag/t3.jpg' title='Picture three'></li>
+		<li><img src='imag/f4.jpg' title='Picture four'></li>
+		<li><img src='imag/f4.jpg' title='Picture four'></li>
+	</ul>
+</div>
+
+// Тип перехода между слайдами
+mode: 'horizontal';
+По умолчанию: 'horizontal';
+Значения: 'horizontal', 'vertical', 'fade';
+
+// Продолжительность перехода между слайдами
+speed: 500; 
+По умолчанию: 500;
+Значения: integer;  
+
+//
+$(document).ready(function(){
+		$('.my-slider').bxSlider({
+		 mode: 'fade',
+		 captions: true,
+		 speed:500
+		});
+	});
+
+
+
+
+//Селектоор чтобы двигать слайд вперед
+nextSelector
+
+
+//Селектоор чтобы двигать слайд назад
+prevSelector
+
+// Текст будет использоваться для контроля "Next"
+nextText: 'Next';
+По умолчанию: 'Next';
+Значения: string; 
+
+// Текст будет использоваться для контроля "Prev"
+prevText: 'Prev';
+По умолчанию: 'Prev';
+Значения: string; 
+
+
+$(document).ready(function(){
+		$('.my-slider').bxSlider({
+					 
+			nextSelector: '#slider-next',
+			prevSelector: '#slider-prev',
+			nextText: 'Onward →',
+			prevText: '← Go back'
+
+			});
+		})
+
+		<div class="outside">
+			<p><span id="slider-prev"></span> | <span id="slider-next"></span></p>
+		</div>
+
+
+// Начала слайда в случайном порядке
+randomStart: false;
+По умолчанию: false;
+Значения: boolean (true / false);                       
+
+$(document).ready(function(){
+				$('.my-slider').bxSlider({
+					 randomStart: true
+				});
+			});
+
+
+// Если это true, то нажав на кнопку "Далее" на последнем слайде перейдет к первому слайду и наоборот
+infiniteLoop: true;
+По умолчанию: true;
+Значения: boolean (true / false); 
+
+
+// Если это true, кнопка "Next" управления будет скрыта по последнему слайду и наоборот
+// Примечание: используется только при infiniteLoop false
+hideControlOnEnd: false;
+По умолчанию: false;
+Значения: boolean (true / false); 
+
+$(document).ready(function(){
+				$('.my-slider').bxSlider({
+					 captions: true,
+					  infiniteLoop: false,
+					  hideControlOnEnd: true
+				});
+			});
+
+// Подписка получена из атрибута заголовка изображения title
+captions: false;
+По умолчанию: false;
+Значения: boolean (true / false); 
+
+$(document).ready(function(){
+				$('.my-slider').bxSlider({
+					 captions: true
+				});
+			});
+
+// Динамически регулирует высоту слайда на основе высоты картинки
+adaptiveHeight: false;
+По умолчанию: false;
+Значения: boolean (true / false); 
+
+$(document).ready(function(){
+				$('.my-slider').bxSlider({
+					 adaptiveHeight: true
+				});
+			});
+
+			
+
+//
+// Pager
+//
+	<div id="bx-pager">
+		<a data-slide-index="0" href=""><img src="imag/f1.jpg" width='30px' height='30px'/></a>
+		<a data-slide-index="1" href=""><img src="imag/t2.jpg" width='30px' height='30px'/></a>
+		<a data-slide-index="2" href=""><img src="imag/t3.jpg" width='30px' height='30px'/></a>
+	</div>
+$(document).ready(function(){
+				$('.my-slider').bxSlider({
+					 captions: true,
+					 pagerCustom: '#bx-pager'
+					  
+				});
+			});
+
+//
+// Controls
+//
+
+
+// Auto
+
+// Слайды автоматически переходит
+auto: false;
+По умолчанию: false;
+Значения: boolean (true / false); 
+
+$(document).ready(function(){
+	$('.my-slider').bxSlider({
+		 captions: true,
+		 auto: true,
+		 autoControls: true
+		});
+	});
+
+
+
+// Используйте слайд в режиме таймера (по аналогии бегущая строка) таймер выставляйте в speed
+ticker: false;
+По умолчанию: false;
+Значения: boolean (true / false); 
+
+$('.my-slider').bxSlider({
+  minSlides: 4,
+  maxSlides: 4,
+  slideWidth: 170,
+  slideMargin: 10,
+  ticker: true,
+  speed: 6000
+});
+
+
+//
+// Carousel
+//
+
+// Минимальное количество слайдов, чтобы быть показано на рисунке. 
+// Слайды будет сжат до, если карусель становится меньше исходного размера.
+minSlides: 1;
+По умолчанию: 1;
+Значения: integer; 
+
+// Максимальное количество слайдов, чтобы быть показано на рисунке. 
+// Слайды будут размером, если карусель становится больше, чем исходный размер.
+maxSlides: 1;
+По умолчанию: 1;
+Значения: integer; 
+
+// Количество слайдов, чтобы перейти на переходный период. Это значение должно быть> = minSlides, и <= maxSlides. 
+// Если он равен нулю (по умолчанию), то будет использоваться число полностью видимых слайдов.
+moveSlides: 0;
+По умолчанию: 0;
+Значения: integer; 
+
+// margin между каждого слайда
+slideMargin: 0;
+По умолчанию: 0;
+Значения: integer;  
+
+// Начиная индекс слайда (с нуля)
+startSlide: 0; 
+По умолчанию: 0;
+Значения: integer;  
+
+// Ширина каждого слайда. Этот параметр является обязательным для всех горизонтальных каруселей!
+slideWidth: false;
+По умолчанию: false;
+Значения: boolean (true / false); 
+
+
+$(document).ready(function(){
+		$('.my-slider').bxSlider({
+			 slideWidth: 200,
+			 minSlides: 2,
+			 maxSlides: 3,
+			 moveSlides: 1,
+			 slideMargin: 10
+					  
+		});
+	});
+
+
+

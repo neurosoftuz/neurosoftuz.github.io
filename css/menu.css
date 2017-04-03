@@ -1,0 +1,27 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+body{
+	background-color:;
+}
+.menu{
+	position:fixed;
+	bottom:100px;
+	right:95px;
+}
+.menu2{
+	display:none;
+	width:100%;
+	height: 662px;
+	background-color:silver;
+}
+.menu2 div img{
+	border-radius: 45px;
+}
+.menu2 div{
+	width: 750px;
+	background-color: white;
+	margin-left:450px;
+	margin-top:150px;
+}

@@ -1,0 +1,13 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+article>ul{
+	list-style-type: none;
+}
+.my-slider>.pictures-menu:hover ul{
+	margin-bottom: 25px;
+}
+/*article{
+	width: 500px;
+}*/

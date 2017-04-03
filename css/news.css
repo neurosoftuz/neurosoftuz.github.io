@@ -1,0 +1,47 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+.div-news{
+	background-color:;
+	border-style:solid;
+	border-color: blue;
+	width:300px;
+	height: 350px;
+	display: inline-block;
+	clear:both;
+	float:left;
+	margin-right: 50px;
+	overflow-y:scroll;
+}
+div>p{
+	font-size:30px;
+	font-family:arial;
+	font-weight: bold;
+	margin-left:30px;
+	margin-top:5px;
+	color:blue;
+}
+nav{
+	margin-right:15px;
+	margin-left:8px;
+	background-color:;
+}
+nav ul .text{
+	list-style-type:none;
+	list-style-image: url();
+	color:;
+	margin-left:3px;
+	margin-top:8px;
+	font-family:Century Gothic;
+}
+nav>ul>.data{
+	margin-top:10px;
+	list-style-type:none;
+	list-style-image: url(images/blue point.png);
+	margin-left:20px;
+	color:silver;
+	margin-bottom:10px;
+	font-family:arial;
+	border-bottom:solid 1px silver;
+}

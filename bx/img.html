@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+		<title>img.uz</title>
+		<script src='js/jquery.js'></script>
+		<link rel='stylesheet' href='css/jquery.bxslider.css'>
+		<script src='js/jquery.bxslider.js'></script>
+		<link rel='stylesheet' href='css/main.css'>
+</head>
+<body>
+	<article>
+		<ul class="my-slider">
+			<li class='pictures-menu' ><img src="images/энцефалографы.png" width='170px'>
+				</li>
+			<li class='pictures-menu'><img src="images/миографы.png" width='170px'>
+				</li>
+			<li class='pictures-menu'><img src="images/cardio.png" width='115px'>
+				</li>
+			<li class='pictures-menu'><img src="images/magnet.png" width='115px'>
+				</li>
+			<li class='pictures-menu'><img src="images/rheo.png" width='155px'>
+				</li>
+			<li class='pictures-menu'><img src="images/audio.png" width='115px'>
+				</li>
+			<li class='pictures-menu'><img src="images/spiro.png" width='190px'>
+				</li>
+			<li class='pictures-menu'><img src="images/psycho.png" width='170px'>
+				</li>
+		</ul>
+	</article>
+	<script type="text/javascript">
+	 	$(document).ready(function(){
+	 	$('.my-slider').bxSlider({
+	 		 slideWidth: 320,
+	 		 minSlides: 2,
+	 		 maxSlides: 4,
+	 		 moveSlides: 1,
+			 slideMargin: 10
+					  
+		});
+		});
+	</script>
+</body>
+</html>

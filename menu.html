@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<link rel="stylesheet" type="text/css" href="css/menu.css">
+	<script src='jquery.js'></script>
+	<title>menu.uz</title>
+</head>
+<body>
+	<div class='menu'>
+		<img src='images/tel2.png' width='80px' height='75px'>
+	</div>
+	<div class='menu2'>
+		<div>
+			<img src='images/tel2.png' width='65px'>
+			<p>Заказ обратного звонка</p>
+			<h3>К сожалению, сейчас у нас не рабочее время. Но мы обязательно перезвоним вам!</h3>
+		</div>
+	</div>
+	<script>
+		$(document).ready(function(){
+				$('.menu').click(function(){
+					$('.menu2').slideToggle();
+				});
+			});
+	</script>
+</body>
+</html>
